@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="es">
       <body className="bg-gray-900 text-white">
         <Navbar />
-        <main className="max-w-5xl mx-auto p-6">{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ export default function Navbar() {
       <h1 className="font-bold">A<span className="text-blue-500">z</span></h1>
       <div className="space-x-4">
         <Link href="/">Lobby</Link>
-        <Link href="/projects">Proyectos</Link>
+        <Link href="/projects">Proyectos / Experiencia</Link>
         <Link href="/about">Sobre mí</Link>
         <Link href="/contact">Contacto</Link>
         <Link href="/blog">Blog</Link>

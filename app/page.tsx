@@ -71,59 +71,111 @@ export default function Home() {
             Ingeniero Civil Informático enfocado en desarrollo backend y soluciones automatizadas.
           </p>
         </div>
-
-        {/* STACK HEADER */}
-        <div className="mt-16 text-center">
-          <p className="text-blue-400 tracking-widest text-sm mb-2">
-            ● HABILIDADES
-          </p>
-
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Stack Tecnológico
-          </h2>
-
-          <div className="w-16 h-1 bg-blue-500 mx-auto mb-6 rounded"></div>
-
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Tecnologías y herramientas que utilizo para construir soluciones eficientes y escalables.
-          </p>
-        </div>
-
-        {/* CARDS */}
-        <div className="mt-12 space-y-6">
-          {skills.map((skill) => (
-            <div
-              key={skill.title}
-              className="flex flex-col md:flex-row md:items-center md:justify-between border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition"
-            >
-              {/* LEFT */}
-              <div className="flex items-center gap-4 min-w-[250px]">
-                <div className={`p-3 rounded-lg ${skill.color}`}>
-                  {skill.icon}
-                </div>
-
-                <h3 className="font-semibold text-lg">
-                  {skill.title}
-                </h3>
-              </div>
-
-              {/* DIVIDER */}
-              <div className="hidden md:block h-8 w-px bg-gray-700 mx-6"></div>
-
-              {/* RIGHT */}
-              <div className="flex flex-wrap gap-3 text-gray-300 text-sm mt-4 md:mt-0 md:justify-end">
-                {skill.items.map((item, i) => (
-                  <span key={i} className="flex items-center gap-2">
-                    {i !== 0 && <span className="text-blue-500">•</span>}
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-
       </div>
+
+      {/* STACK + PROYECTOS */}
+  {/* ================= STACK + PROYECTOS (FULL WIDTH) ================= */}
+  <div className="mt-24 w-full px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-5 gap-12">
+
+    {/* ===== STACK (65%) ===== */}
+    <div className="md:col-span-3">
+
+      <div className="text-left">
+        <p className="text-blue-400 tracking-widest text-sm mb-2">
+          ● HABILIDADES
+        </p>
+
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          Stack Tecnológico
+        </h2>
+
+        <div className="w-16 h-1 bg-blue-500 mb-6 rounded"></div>
+
+        <p className="text-gray-400 max-w-2xl">
+          Tecnologías y herramientas que utilizo para construir soluciones eficientes y escalables.
+        </p>
+      </div>
+
+      <div className="mt-12 space-y-6">
+        {skills.map((skill) => (
+          <div
+            key={skill.title}
+            className="flex flex-col md:flex-row md:items-center md:justify-between border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition"
+          >
+            <div className="flex items-center gap-4 min-w-[250px]">
+              <div className={`p-3 rounded-lg ${skill.color}`}>
+                {skill.icon}
+              </div>
+
+              <h3 className="font-semibold text-lg">
+                {skill.title}
+              </h3>
+            </div>
+
+            <div className="hidden md:block h-8 w-px bg-gray-700 mx-6"></div>
+
+            <div className="flex flex-wrap gap-3 text-gray-300 text-sm mt-4 md:mt-0 md:justify-end">
+              {skill.items.map((item, i) => (
+                <span key={i} className="flex items-center gap-2">
+                  {i !== 0 && <span className="text-blue-500">•</span>}
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* ===== PROYECTOS (35%) ===== */}
+    <div className="md:col-span-2 space-y-8">
+
+      <div>
+        <p className="text-blue-400 tracking-widest text-sm mb-2">
+          ● PROYECTOS
+        </p>
+
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          Mis Proyectos
+        </h2>
+
+        <div className="w-16 h-1 bg-blue-500 mb-6 rounded"></div>
+        <br></br>
+      </div>
+
+      <div className="space-y-8">
+
+        <div className="border border-gray-800 rounded-xl p-8 hover:border-blue-500 hover:scale-[1.02] transition">
+          <h3 className="font-semibold text-lg mb-2">
+            Sistema de Gestión
+          </h3>
+
+          <p className="text-gray-400 text-sm mb-4">
+            Aplicación web con backend en Flask y frontend en React.
+          </p>
+
+          <div className="flex flex-wrap gap-2 text-xs text-gray-400">
+            <span>React</span><span>•</span><span>Flask</span><span>•</span><span>API REST</span>
+          </div>
+        </div>
+
+        <div className="border border-gray-800 rounded-xl p-8 hover:border-blue-500 hover:scale-[1.02] transition">
+          <h3 className="font-semibold text-lg mb-2">
+            Automatización BI
+          </h3>
+
+          <p className="text-gray-400 text-sm mb-4">
+            Flujos automatizados con Power Automate integrando múltiples fuentes.
+          </p>
+
+          <div className="flex flex-wrap gap-2 text-xs text-gray-400">
+            <span>Power Apps</span><span>•</span><span>Power Automate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
     </section>
   );
 }

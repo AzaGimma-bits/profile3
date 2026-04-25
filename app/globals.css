@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* =========================
-   ANIMACIÓN DE ENTRADA
-========================= */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -29,9 +26,6 @@
   animation-delay: 0.8s;
 }
 
-/* =========================
-   NEÓN BASE (ESTABLE)
-========================= */
 .neon-base {
   color: #60a5fa;
   text-shadow:
@@ -41,9 +35,7 @@
     0 0 48px rgba(59,130,246,0.4);
 }
 
-/* =========================
-   FLICKER PRINCIPAL
-========================= */
+
 @keyframes neonFlicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     opacity: 1;
@@ -55,10 +47,6 @@
     opacity: 0.2;
   }
 }
-
-/* =========================
-   FLICKER IRREGULAR (REALISMO)
-========================= */
 @keyframes neonFlickerIrregular {
   0% { opacity: 1; }
   7% { opacity: 0.3; }
@@ -74,9 +62,6 @@
   100% { opacity: 1; }
 }
 
-/* =========================
-   COMBINADO: FADE + NEÓN + FLICKER
-========================= */
 .neon-animated {
   color: #60a5fa;
   text-shadow:
@@ -91,9 +76,6 @@
    neonFlickerIrregular 5s infinite 5s;
 }
 
-/* =========================
-   THEME
-========================= */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -117,4 +99,22 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Imagen rotativa */
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }

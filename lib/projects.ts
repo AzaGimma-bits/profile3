@@ -1,14 +1,14 @@
 export const projects = [
   {
-    title: "API de Transacciones",
-    description: "Backend en Laravel para gestión de pagos",
-    tech: ["Laravel", "MySQL"],
+    title: "Automatización BI",
+    description: "Flujos automatizados con Power Automate integrando múltiples fuentes",
+    tech: ["Power Automate", "Power Apps", "Power BI", "Excel"],
     link: "#",
   },
   {
-    title: "Sistema de Alertas",
-    description: "Sistema automatizado con Power Automate",
-    tech: ["Power Automate", "Excel"],
+    title: "Proyecto Fondecyt",
+    description: "Proyecto de título",
+    tech: ["Python", "Flask", "React", "SQL", "Docker"],
     link: "#",
   },
 ];
