@@ -5,46 +5,11 @@ import {
   Cpu,
   Globe,
 } from "lucide-react";
+import { skills } from "@/lib/stack";
+import SkillsSection from "@/components/stack";
 
 export default function Home() {
-  const skills = [
-    {
-      title: "Desarrollo Web y DevOps",
-      icon: <Code size={28} />,
-      items: ["Flask", "React", "RESTful APIs", "Docker", "HTML"],
-      color: "bg-blue-500/20 text-blue-400",
-    },
-    {
-      title: "Automatización y Business Intelligence",
-      icon: <BarChart3 size={28} />,
-      items: ["Power BI", "Power Automate", "Power Apps"],
-      color: "bg-green-500/20 text-green-400",
-    },
-    {
-      title: "Control de versiones",
-      icon: <GitBranch size={28} />,
-      items: ["Git", "GitHub"],
-      color: "bg-purple-500/20 text-purple-400",
-    },
-    {
-      title: "Lenguajes de programación",
-      icon: <Cpu size={28} />,
-      items: [
-        "Python (Avanzado)",
-        "SQL (Intermedio)",
-        "JavaScript (Intermedio)",
-        "Java",
-        "C",
-      ],
-      color: "bg-yellow-500/20 text-yellow-400",
-    },
-    {
-      title: "Idiomas",
-      icon: <Globe size={28} />,
-      items: ["Español (nativo)", "Inglés (intermedio)"],
-      color: "bg-cyan-500/20 text-cyan-400",
-    },
-  ];
+ 
 
   return (
     <section className="py-20 px-6  text-white">
@@ -94,37 +59,11 @@ export default function Home() {
         <p className="text-gray-400 max-w-2xl">
           Tecnologías y herramientas que utilizo para construir soluciones eficientes y escalables.
         </p>
+        <br></br>
       </div>
-
-      <div className="mt-12 space-y-6">
-        {skills.map((skill) => (
-          <div
-            key={skill.title}
-            className="flex flex-col md:flex-row md:items-center md:justify-between border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition"
-          >
-            <div className="flex items-center gap-4 min-w-[250px]">
-              <div className={`p-3 rounded-lg ${skill.color}`}>
-                {skill.icon}
-              </div>
-
-              <h3 className="font-semibold text-lg">
-                {skill.title}
-              </h3>
-            </div>
-
-            <div className="hidden md:block h-8 w-px bg-gray-700 mx-6"></div>
-
-            <div className="flex flex-wrap gap-3 text-gray-300 text-sm mt-4 md:mt-0 md:justify-end">
-              {skill.items.map((item, i) => (
-                <span key={i} className="flex items-center gap-2">
-                  {i !== 0 && <span className="text-blue-500">•</span>}
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+      
+      <SkillsSection data={skills} />
+      
     </div>
 
     {/* ===== PROYECTOS (35%) ===== */}

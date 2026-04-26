@@ -1,3 +1,4 @@
+//Componente de tarjeta de resultados utilizado para mostrar tops en regionales de pokemon tcg.
 export default function CategoryCard({ title, data }: any) {
   return (
     <div className="border border-gray-800 rounded-xl p-5 

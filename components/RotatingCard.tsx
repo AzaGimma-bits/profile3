@@ -1,3 +1,4 @@
+//Componente de tarjeta rotatoria utilizado para mi foto de perfil en la sección "Sobre mí". Implementa una animación de rotación suave cada 4 segundos, mostrando dos imágenes diferentes. La tarjeta tiene un diseño circular y utiliza técnicas de CSS para lograr el efecto de volteo 3D.
 "use client";
 
 import { useEffect, useState } from "react";

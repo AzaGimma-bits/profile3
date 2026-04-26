@@ -1,3 +1,4 @@
+//Proyectos y experiencias que son significativas para el portafolio.
 export const projects = [
   {
     title: "Automatización BI",

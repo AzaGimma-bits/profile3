@@ -2,6 +2,8 @@ import PokemonSection from "@/components/pokemon";
 import { labExperiments } from "@/lib/otherProjects";
 import LabItem from "@/components/otherProjects";
 import LabSection from "@/components/labSection"; 
+import { hardwareProjects } from "@/lib/hardware";
+import HardwareSection from "@/components/hardwareSection";
 
 export default function ProjectsExtra() {
   return (
@@ -47,24 +49,12 @@ export default function ProjectsExtra() {
     </div>
         {/* ===================== 3D ===================== */}
         <div>
-          <div className="w-20 h-[2px] bg-gray-700 mb-6" />
-
-          <h2 className="text-xl font-medium mb-3">
-            Impresión 3D & Hardware
-          </h2>
-
-          <p className="text-gray-400 mb-6 max-w-xl">
-            Diseño, prototipado y desarrollo de soluciones físicas.
-          </p>
-
-          <div className="border border-gray-800 rounded-xl p-6 text-gray-500 text-sm">
-
-          </div>
+         
+            <HardwareSection data={hardwareProjects} />
         </div>
 
         {/* ===================== EXPLORACIONES ===================== */}
         <div>
-          <div className="w-32 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-6" />
 
           <h2 className="text-xl font-medium mb-3">
             Exploraciones

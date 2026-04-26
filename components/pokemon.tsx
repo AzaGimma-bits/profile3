@@ -1,3 +1,4 @@
+//Componente de sección de resultados competitivos en Pokémon TCG. Muestra los resultados obtenidos en diferentes categorías de torneos oficiales durante la temporada 2026, incluyendo League Challenge, League Cup y Regionales.
 import CategoryCard from "./ResultCards";
 
 const leagueChallenge = [

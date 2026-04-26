@@ -1,3 +1,4 @@
+//Componente de sección de "Más allá del código" que muestra proyectos e ideas que no encajan en las categorías principales, pero que quiero incluir como parte de mi portafolio para mostrar mi curiosidad y capacidad de aprendizaje en áreas diversas.
 type LabItemProps = {
   title: string;
   description: string;

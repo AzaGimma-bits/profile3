@@ -1,3 +1,4 @@
+//Componente de tarjeta de proyecto utilizado para mostrar proyectos y experiencias en la sección correspondiente. Cada tarjeta muestra el título del proyecto, una descripción breve, las tecnologías utilizadas y un enlace para ver más detalles si está disponible. 
 type Props = {
   title: string;
   description: string;

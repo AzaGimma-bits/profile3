@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="w-full md:w-auto flex justify-center md:justify-end">
             <div className="w-20 h-20 opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110">
               <a
-                    href="https://tulink.com"
+                    href="https://www.youtube.com/watch?v=SECVGN4Bsgg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative w-20 h-20 block"
