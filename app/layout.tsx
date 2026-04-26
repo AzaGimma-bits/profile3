@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Felipe Castro | Portafolio",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body className="bg-gray-900 text-white">
         <Navbar />
         <main className="w-full">{children}</main>
+        <Footer />
       </body>
     </html>
   );

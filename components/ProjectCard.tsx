@@ -2,7 +2,7 @@ type Props = {
   title: string;
   description: string;
   tech: string[];
-  link: string;
+  link?: string;
 };
 
 export default function ProjectCard({
@@ -33,12 +33,20 @@ export default function ProjectCard({
         ))}
       </div>
 
-      <a
-        href={link}
-        className="text-blue-400 text-sm mt-3 inline-block hover:underline"
-      >
-        Ver más →
-      </a>
+     {link ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 text-sm mt-3 inline-block hover:underline"
+        >
+          Ver más →
+        </a>
+      ) : (
+        <span className="text-gray-600 text-xs mt-3 inline-block">
+          Privado / No disponible
+        </span>
+      )}
     </div>
   );
 }
