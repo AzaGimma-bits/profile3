@@ -7,8 +7,8 @@ import HardwareSection from "@/components/hardwareSection";
 
 export default function ProjectsExtra() {
   return (
-
     <section className="w-full px-6 md:px-16 py-20">
+      {/* Guccito Flotante */}
       <a href="https://www.youtube.com/watch?v=mONTSRzdRZw" target="_blank" className="fixed bottom-4 left-4 z-50">
         <img
           src="/images/guccito3.png"
@@ -16,27 +16,14 @@ export default function ProjectsExtra() {
           className="w-50 opacity-70 hover:opacity-100 hover:scale-110 transition"
         />
       </a>
-
-
       <div className="max-w-5xl mx-auto flex flex-col gap-16">
 
          <div className="py-14 grid md:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
       
-      {/* TEXTO */}
-      <div>
-        <h1 className="text-sm text-gray-400 mb-2 tracking-[0.2em] uppercase">
-          Sandbox
-        </h1>
-
-        <p className="text-lg text-gray-300 max-w-xl">
-          Proyectos físicos, exploraciones personales y resultados competitivos.
-        </p>
-      </div>
-
       {/* IMAGEN */}
       <div className="relative w-full">
         <img
-          src="/images/bufon.jpg"
+          src="/images/luffy.jpeg"
           alt="visual"
           className="w-full rounded-xl border border-gray-800 object-cover 
                      brightness-75 contrast-90 saturate-75 
@@ -44,6 +31,17 @@ export default function ProjectsExtra() {
         />
         <div className="absolute inset-0 rounded-xl 
                         bg-gradient-to-l from-transparent via-black/30 to-black/80" />
+      </div>
+      {/* Primer bloque */}
+      
+       <div>
+        <h1 className="text-sm text-gray-400 mb-2 tracking-[0.2em] uppercase">
+          Sandbox
+        </h1>
+
+        <p className="text-lg text-gray-300 max-w-xl">
+          Proyectos físicos, exploraciones personales y resultados competitivos.
+        </p>
       </div>
 
     </div>

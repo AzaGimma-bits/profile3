@@ -15,26 +15,23 @@ export default function SkillsSection({ data }: { data: Skill[] }) {
         return (
           <div
             key={skill.title}
-            className="flex justify-between border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition"
+            className="flex flex-col gap-2 border border-gray-800 rounded-lg p-4 hover:border-blue-500 transition"
           >
-            <div className="flex items-center gap-4">
-              <div className={`p-3 rounded-lg ${skill.color}`}>
-                <Icon size={28} />
-              </div>
+            <div className="flex gap-4">
+  <div className={`p-3 rounded-lg ${skill.color}`}>
+    <Icon size={24} />
+  </div>
 
-              <h3 className="font-semibold text-lg">
-                {skill.title}
-              </h3>
-            </div>
+  <div className="flex flex-col">
+    <h3 className="font-semibold text-lg">
+      {skill.title}
+    </h3>
 
-            <div className="flex flex-wrap gap-3 text-gray-300 text-sm">
-              {skill.items.map((item, i) => (
-                <span key={i}>
-                  {i !== 0 && <span className="text-blue-500"> • </span>}
-                  {item}
-                </span>
-              ))}
-            </div>
+    <div className="text-sm text-gray-400">
+      {skill.items.join(" · ")}
+    </div>
+  </div>
+</div>
           </div>
         );
       })}

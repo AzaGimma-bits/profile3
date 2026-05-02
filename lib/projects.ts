@@ -2,7 +2,7 @@
 export const projects = [
   {
     title: "Automatización BI",
-    description: "Flujos automatizados con Power Automate integrando múltiples fuentes",
+    description: "oooooooooooooooooooooAaaaaautaaaaaaaaaaaaaaaaaaaaaaaaomatización de procesos de neasdasdasdasdasdgocio y generación de reportes con Power Platform.",
     tech: ["Power Automate", "Power Apps", "Power BI", "Excel"],
   },
   {

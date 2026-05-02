@@ -33,17 +33,17 @@ export default function Home() {
 
           {/* Subtítulo */}
           <p className="text-gray-400 max-w-2xl mx-auto mt-6 opacity-0 animate-fade-in delay-2">
-            Ingeniero Civil Informático.
+            Ingeniero Civil Informático especializado en backend y automatización de procesos y soluciones eficientes orientadas a optimizar flujos de negocio
           </p>
         </div>
       </div>
 
       {/* STACK + PROYECTOS */}
   {/* ================= STACK + PROYECTOS (FULL WIDTH) ================= */}
-  <div className="mt-24 w-full px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-5 gap-12">
+  <div className="mt-24 w-full px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-    {/* ===== STACK (65%) ===== */}
-    <div className="md:col-span-3">
+    {/* ===== STACK (50%) ===== */}
+    <div className="">
 
       <div className="text-left">
         <p className="text-blue-400 tracking-widest text-sm mb-2">
@@ -56,7 +56,7 @@ export default function Home() {
 
         <div className="w-16 h-1 bg-blue-500 mb-6 rounded"></div>
 
-        <p className="text-gray-400 max-w-2xl">
+        <p className="text-gray-400 max-w-xl">
           Tecnologías y herramientas que utilizo para construir soluciones eficientes y escalables.
         </p>
         <br></br>
@@ -66,54 +66,94 @@ export default function Home() {
       
     </div>
 
-    {/* ===== PROYECTOS (35%) ===== */}
-    <div className="md:col-span-2 space-y-8">
+    {/* ===== PROYECTOS (50%) ===== */}
+    <div className="space-y-8">
+  <div className="flex items-end justify-between mb-10">
 
-      <div>
-        <p className="text-blue-400 tracking-widest text-sm mb-2">
-          ● PROYECTOS
-        </p>
+    <div>
+      <p className="text-blue-400 tracking-widest text-sm mb-2">
+        ● PROYECTOS
+      </p>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
-          Mis Proyectos
-        </h2>
+      <h2 className="text-4xl md:text-5xl font-bold">
+        Proyectos Destacados
+      </h2>
 
-        <div className="w-16 h-1 bg-blue-500 mb-6 rounded"></div>
-        <br></br>
-      </div>
-
-      <div className="space-y-8">
-
-        <div className="border border-gray-800 rounded-xl p-8 hover:border-blue-500 hover:scale-[1.02] transition">
-          <h3 className="font-semibold text-lg mb-2">
-            Sistema de Gestión
-          </h3>
-
-          <p className="text-gray-400 text-sm mb-4">
-            Aplicación web con backend en Flask y frontend en React.
-          </p>
-
-          <div className="flex flex-wrap gap-2 text-xs text-gray-400">
-            <span>React</span><span>•</span><span>Flask</span><span>•</span><span>API REST</span>
-          </div>
-        </div>
-
-        <div className="border border-gray-800 rounded-xl p-8 hover:border-blue-500 hover:scale-[1.02] transition">
-          <h3 className="font-semibold text-lg mb-2">
-            Automatización BI
-          </h3>
-
-          <p className="text-gray-400 text-sm mb-4">
-            Flujos automatizados con Power Automate integrando múltiples fuentes.
-          </p>
-
-          <div className="flex flex-wrap gap-2 text-xs text-gray-400">
-            <span>Power Apps</span><span>•</span><span>Power Automate</span>
-          </div>
-        </div>
-      </div>
+      <div className="w-16 h-1 bg-blue-500 mt-4 rounded"></div>
+      <br></br>
     </div>
   </div>
+
+  {/* GRID */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+  {/* CARD 1 */}
+  <div className="border border-gray-800 rounded-xl p-6 
+  hover:border-blue-500 hover:-translate-y-1 transition-all">
+
+    <h3 className="font-semibold text-lg mb-2">
+      Sistema de Gestión
+    </h3>
+
+    <p className="text-gray-400 text-sm mb-4">
+      Aplicación web con backend en Flask y frontend en React.
+    </p>
+
+    <div className="flex flex-wrap gap-2 text-xs text-gray-500">
+      <span>React</span><span>•</span><span>Flask</span><span>•</span><span>API REST</span>
+    </div>
+  </div>
+
+  {/* CARD 2 */}
+  <div className="border border-gray-800 rounded-xl p-6 
+  hover:border-blue-500 hover:-translate-y-1 transition-all">
+
+    <h3 className="font-semibold text-lg mb-2">
+      Automatización BI
+    </h3>
+
+    <p className="text-gray-400 text-sm mb-4">
+      Flujos automatizados con Power Automate integrando múltiples fuentes.
+    </p>
+
+    <div className="flex flex-wrap gap-2 text-xs text-gray-500">
+      <span>Power Apps</span><span>•</span><span>Power Automate</span>
+    </div>
+  </div>
+
+  {/* CARD 3 (puedes agregar otro real si tienes) */}
+  <div className="border border-gray-800 rounded-xl p-6 
+  hover:border-blue-500 hover:-translate-y-1 transition-all">
+
+    <h3 className="font-semibold text-lg mb-2">
+      Proyecto adicional
+    </h3>
+
+    <p className="text-gray-400 text-sm mb-4">
+      Breve descripción de otro proyecto o sistema que hayas desarrollado.
+    </p>
+
+    <div className="flex flex-wrap gap-2 text-xs text-gray-500">
+      <span>Tech</span><span>•</span><span>Stack</span>
+    </div>
+  </div>
+
+  {/* CTA CARD */}
+  <a
+    href="/projects"
+    className="flex items-center justify-center text-center border border-dashed border-gray-700 rounded-xl p-6 
+    hover:border-blue-400 hover:text-white text-gray-400 transition-all"
+  >
+    Ver todos los proyectos →
+  </a>
+
+</div>
+    
+  
+
+
+</div>
+    </div>
 
   {/* contacto */}
 <section className="mt-20 px-4 max-w-2xl mx-auto text-center">
@@ -126,7 +166,6 @@ export default function Home() {
 
   <p className="text-gray-400 mb-8">
     Si quieres contactarme, puedes hacerlo por correo o redes profesionales.
-    También respondo señales de humo, cartas… y en situaciones críticas, vía Dragonite. (Tiempos de respuesta pueden variar según clima.)
   </p>
 
   {/* BOTONES */}

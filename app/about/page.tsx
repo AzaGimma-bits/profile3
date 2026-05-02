@@ -27,36 +27,6 @@ export default function About() {
             Participé en el centro de alumnos de mi universidad, lo que me permitió
             desarrollar habilidades de liderazgo y trabajo en equipo.
           </p>
-          {/* EXPERIENCIA COMPLEMENTARIA */}
-<div className="mt-16">
-
-  <h2 className="text-lg font-medium mb-4">
-    Experiencia complementaria
-  </h2>
-
-  <div className="space-y-4 text-gray-400">
-
-    <div>
-      <p className="font-medium text-white">
-        Ayudante de veterinaria
-      </p>
-      <p className="text-sm">
-        Trabajo con clientes, organización y apoyo en tareas clínicas.
-      </p>
-    </div>
-
-    <div>
-      <p className="font-medium text-white">
-        Profesor de natación
-      </p>
-      <p className="text-sm">
-        Desarrollo de habilidades pedagógicas, comunicación y liderazgo.
-      </p>
-    </div>
-
-  </div>
-
-</div>
         </div>
 
         {/* CARD GIRATORIA */}
@@ -70,7 +40,45 @@ export default function About() {
         </div>
 
       </div>
+                {/* EXPERIENCIA COMPLEMENTARIA */}
+<div className="mt-20">
 
+  <h2 className="text-lg font-medium mb-8">
+    Experiencia complementaria
+  </h2>
+
+  <div className="divide-y divide-gray-800">
+
+    <div className="py-4">
+      <p className="font-medium text-white">
+        Asistente de Ventas de Merchandising en Eventos – Riot Games
+      </p>
+      <p className="text-sm text-gray-400 mt-1 leading-relaxed">
+        Participación en VALORANT Masters (Chile), con enfoque en atención al cliente y soporte operativo en entornos de alta demanda.
+      </p>
+    </div>
+
+    <div className="py-4">
+      <p className="font-medium text-white">
+        Asistente en Clínica Veterinaria
+      </p>
+      <p className="text-sm text-gray-400 mt-1 leading-relaxed">
+        Atención a clientes, organización de insumos y apoyo en procedimientos clínicos básicos.
+      </p>
+    </div>
+
+    <div className="py-4">
+      <p className="font-medium text-white">
+        Instructor de Natación
+      </p>
+      <p className="text-sm text-gray-400 mt-1 leading-relaxed">
+        Desarrollo de habilidades pedagógicas, comunicación efectiva y liderazgo en contextos formativos.
+      </p>
+    </div>
+
+  </div>
+
+</div>
       {/* BLOQUE CV + LINKS */}
       <div className="mt-16 text-center">
         <p className="text-gray-400 mb-6">

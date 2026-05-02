@@ -3,13 +3,12 @@ export default function Contact() {
     <section className="mt-20 px-4 max-w-2xl mx-auto text-center">
 
   {/* Línea superior */}
-  <h1 className="text-3xl font-bold mb-4 tracking-tight">
+<h1 className="text-3xl font-bold mb-4 tracking-tight">
     Contacto
   </h1>
 
   <p className="text-gray-400 mb-8">
     Si quieres contactarme, puedes hacerlo por correo o redes profesionales.
-    También respondo señales de humo, cartas… y en situaciones críticas, vía Dragonite. (Tiempos de respuesta pueden variar según clima.)
   </p>
 
   {/* BOTONES */}

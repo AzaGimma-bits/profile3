@@ -9,7 +9,6 @@ export default function Navbar() {
         <Link href="/projects">Proyectos / Experiencia</Link>
         <Link href="/about">Sobre mí</Link>
         <Link href="/contact">Contacto</Link>
-        <Link href="/more">Más allá del código</Link>
       </div>
     </nav>
   );
