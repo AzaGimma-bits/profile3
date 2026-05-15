@@ -63,7 +63,7 @@ export default function Footer() {
                     >
                     {/* Imagen base */}
                     <img
-                        src="/images/guccito1.png"
+                        src="/images/g1.png"
                         alt="guiño"
                         className="absolute inset-0 w-full h-full object-contain
                                 transition-opacity duration-300 group-hover:opacity-0"
