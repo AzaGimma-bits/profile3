@@ -71,7 +71,7 @@ export default function Footer() {
 
                     {/* Imagen alternativa (aparece en hover) */}
                     <img
-                        src="/images/guccito2.png"
+                        src="/images/g2.png"
                         alt="guiño hover"
                         className="absolute inset-0 w-full h-full object-contain
                                 opacity-0 transition-opacity duration-300 group-hover:opacity-100"

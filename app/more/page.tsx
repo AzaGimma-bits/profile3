@@ -11,7 +11,7 @@ export default function ProjectsExtra() {
       {/* Guccito Flotante */}
       <a href="https://www.youtube.com/watch?v=mONTSRzdRZw" target="_blank" className="fixed bottom-4 left-4 z-50">
         <img
-          src="/images/guccito3.png"
+          src="/images/g3.png"
           alt="guiño"
           className="w-50 opacity-70 hover:opacity-100 hover:scale-110 transition"
         />
