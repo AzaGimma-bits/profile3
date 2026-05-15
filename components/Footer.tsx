@@ -1,6 +1,25 @@
 "use client";
+import { useState } from "react";
 
 export default function Footer() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(
+        "felipe.castro.off@gmail.com"
+      );
+
+      setCopied(true);
+
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (err) {
+      console.error("Error al copiar:", err);
+    }
+  };
+
   return (
     <footer
       id="footer"
@@ -25,10 +44,9 @@ export default function Footer() {
               </a>
 
               <button
-                onClick={() => navigator.clipboard.writeText("felipe.castro.off@gmail.com")}
+                onClick={handleCopy}
                 className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1"
-              >
-                Correo
+              > {copied ? "¡Copiado!" : "Correo"}
               </button>
 
             </div>

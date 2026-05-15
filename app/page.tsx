@@ -33,7 +33,7 @@ export default function Home() {
 
           {/* Subtítulo */}
           <p className="text-gray-400 max-w-2xl mx-auto mt-6 opacity-0 animate-fade-in delay-2">
-            Ingeniero Civil Informático especializado en backend y automatización de procesos y soluciones eficientes orientadas a optimizar flujos de negocio
+            Ingeniero Civil Informático especializado en backend, automatización de procesos y soluciones eficientes orientadas a optimizar flujos de negocio
           </p>
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function Home() {
           ● HABILIDADES
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Stack Tecnológico
         </h2>
 
@@ -75,7 +75,7 @@ export default function Home() {
         ● PROYECTOS
       </p>
 
-      <h2 className="text-4xl md:text-5xl font-bold">
+      <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
         Proyectos Destacados
       </h2>
 
@@ -88,24 +88,7 @@ export default function Home() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
   {/* CARD 1 */}
-  <div className="border border-gray-800 rounded-xl p-6 
-  hover:border-blue-500 hover:-translate-y-1 transition-all">
-
-    <h3 className="font-semibold text-lg mb-2">
-      Sistema de Gestión
-    </h3>
-
-    <p className="text-gray-400 text-sm mb-4">
-      Aplicación web con backend en Flask y frontend en React.
-    </p>
-
-    <div className="flex flex-wrap gap-2 text-xs text-gray-500">
-      <span>React</span><span>•</span><span>Flask</span><span>•</span><span>API REST</span>
-    </div>
-  </div>
-
-  {/* CARD 2 */}
-  <div className="border border-gray-800 rounded-xl p-6 
+   <div className="border border-gray-800 rounded-xl p-6 min-h-[200px]
   hover:border-blue-500 hover:-translate-y-1 transition-all">
 
     <h3 className="font-semibold text-lg mb-2">
@@ -120,21 +103,40 @@ export default function Home() {
       <span>Power Apps</span><span>•</span><span>Power Automate</span>
     </div>
   </div>
+  {/* CARD 2 */}
+ 
+
+  <div className="border border-gray-800 rounded-xl p-6 
+  hover:border-blue-500 hover:-translate-y-1 transition-all">
+
+    <h3 className="font-semibold text-lg mb-2">
+      Proyecto Fondecyt
+    </h3>
+
+    <p className="text-gray-400 text-sm mb-4">
+      Aplicación web con backend en Flask y frontend en React.
+    </p>
+
+    <div className="flex flex-wrap gap-2 text-xs text-gray-500">
+      <span>React</span><span>•</span><span>Flask</span><span>•</span><span>API REST</span>
+    </div>
+  </div>
+
 
   {/* CARD 3 (puedes agregar otro real si tienes) */}
   <div className="border border-gray-800 rounded-xl p-6 
   hover:border-blue-500 hover:-translate-y-1 transition-all">
 
     <h3 className="font-semibold text-lg mb-2">
-      Proyecto adicional
+      Ingeniero en Sistemas Web
     </h3>
 
     <p className="text-gray-400 text-sm mb-4">
-      Breve descripción de otro proyecto o sistema que hayas desarrollado.
+      Desarrollo y personalización de sitios WordPress.
     </p>
 
     <div className="flex flex-wrap gap-2 text-xs text-gray-500">
-      <span>Tech</span><span>•</span><span>Stack</span>
+      <span>WordPress</span><span>•</span><span>PHP</span>
     </div>
   </div>
 

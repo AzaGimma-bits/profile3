@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 
 type Props = {
   title: string;
+  company?: string;
   description: string;
   tech: string[];
   link?: string;
@@ -11,12 +12,14 @@ type Props = {
 
 export default function ProjectCard({
   title,
+  company,
   description,
   tech,
   link,
 }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [height, setHeight] = useState("72px");
+
   const contentRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
@@ -30,24 +33,65 @@ export default function ProjectCard({
   }, [expanded]);
 
   return (
-    <div className="border border-gray-700 rounded-xl p-4 bg-gray-900 hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
-      
-      <h2 className="text-lg font-semibold">{title}</h2>
+    <div
+      className="
+        border border-gray-700
+        rounded-xl
+        p-4
+        bg-gray-900
+        hover:shadow-xl
+        hover:-translate-y-1
+        transition-all
+        duration-200
+      "
+    >
+      {/* Empresa */}
+      {company && (
+        <span
+          className="
+            inline-block
+            text-[11px]
+          font-medium
+          text-gray-500
+          tracking-wide"
+        >
+  {company}
+</span>
+      )}
+
+      {/* Título */}
+      <h2 className="text-lg font-semibold text-white">
+        {title}
+      </h2>
 
       {/* Descripción */}
       <p
         ref={contentRef}
         style={{ maxHeight: height }}
-        className="text-gray-400 text-sm mt-2 overflow-hidden transition-all duration-300 ease-in-out break-words"
+        className="
+          text-gray-400
+          text-sm
+          mt-2
+          overflow-hidden
+          transition-all
+          duration-300
+          ease-in-out
+          break-words
+        "
       >
         {description}
       </p>
 
-      {/* Botón */}
+      {/* Botón expandir */}
       {description.length > 120 && (
         <button
           onClick={() => setExpanded(!expanded)}
-          className="text-blue-400 text-xs mt-2 hover:underline"
+          className="
+            text-blue-400
+            text-xs
+            mt-2
+            hover:underline
+          "
         >
           {expanded ? "Ver menos" : "Ver más"}
         </button>
@@ -58,7 +102,14 @@ export default function ProjectCard({
         {tech.slice(0, 4).map((t) => (
           <span
             key={t}
-            className="text-xs bg-gray-800 px-2 py-1 rounded"
+            className="
+              text-xs
+              bg-gray-800
+              text-gray-300
+              px-2
+              py-1
+              rounded
+            "
           >
             {t}
           </span>
@@ -71,12 +122,25 @@ export default function ProjectCard({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 text-sm mt-3 inline-block hover:underline"
+          className="
+            text-green-400
+            text-sm
+            mt-3
+            inline-block
+            hover:underline
+          "
         >
           Ver proyecto →
         </a>
       ) : (
-        <span className="text-gray-600 text-xs mt-3 inline-block">
+        <span
+          className="
+            text-gray-600
+            text-xs
+            mt-3
+            inline-block
+          "
+        >
           Privado / No disponible
         </span>
       )}
